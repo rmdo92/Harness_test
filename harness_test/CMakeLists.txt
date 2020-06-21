@@ -27,6 +27,6 @@ message( "Set include to :- ${INCLUDE_DIRS} " )
 
 include_directories ( ${INCLUDE_DIRS} )
 
-add_executable ( harness_test  ${SOURCE_FILES}  "System/registry/inc/debug.h")
+add_executable ( harness_test  ${SOURCE_FILES} )
 
 # TODO: Add tests and install targets if needed.
