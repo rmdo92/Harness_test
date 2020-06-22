@@ -11,10 +11,12 @@ class cRegistry : public cRoot
 public:
 	cRegistry(void);
 
+	int Add(cRoot *item);
+
 	void Dump(void);
 
 private:
-	std::list<cRoot> Reg;
+	std::list<cRoot *> Reg;
 
 };
 

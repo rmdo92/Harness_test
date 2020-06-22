@@ -9,7 +9,7 @@
 class cRoot
 {
 	char Name[32];
-	long ID_type;
+	long Type;
 	long ID;
 
 public:
@@ -21,6 +21,9 @@ public:
 	void Tick(void) { DEBUG_MESSAGE("cRoot::Tick"); };
 	void Dump(void) { DEBUG_MESSAGE("cRoot::Dump"); };
 
+	char* GetName() { return Name; }
+	long  GetType() { return Type; }
+	long  GetID()   { return ID; }
 };
 
 #endif // __SYSTEM_ROOT_ROOT_H__
