@@ -1,1 +1,1 @@
-Debug;Registry;Root;
+Debug;Registry;Root;Scheduler

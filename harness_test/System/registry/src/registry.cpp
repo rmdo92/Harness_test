@@ -6,6 +6,7 @@
  cRegistry::cRegistry( void )
 {
 	 DEBUG_MESSAGE("cRegistry");
+	 Type = CREGISTRY_CLASS;
 
 	 Add(this);
 }
@@ -27,6 +28,7 @@ void cRegistry::Dump( void )
 	{
 		cRoot* Item = *it;
 		i++;
+
 		printf(" %3d  - %-32s %08x %08x\n", i, Item->GetName(), Item->GetID(), Item->GetType());
 	}
 
